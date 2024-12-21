@@ -38,7 +38,7 @@ return [
     |
     */
 
-    'layout' => 'components.layouts.app',
+    'layout' => 'layouts.app',
 
     /*
     |---------------------------------------------------------------------------
@@ -157,4 +157,5 @@ return [
     */
 
     'pagination_theme' => 'tailwind',
+    //   'asset_url' => 'laravel-livewire/public/livewire/livewire.js',
 ];
