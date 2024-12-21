@@ -1,3 +1,3 @@
 <div>
-    {{-- Be like water. --}}
+    <livewire:posts.create/>
 </div>
