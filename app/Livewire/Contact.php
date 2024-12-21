@@ -11,6 +11,7 @@ class Contact extends Component
 {
     public function render()
     {
+        sleep(2);
         return view('livewire.contact');
     }
 }
