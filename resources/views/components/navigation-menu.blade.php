@@ -7,10 +7,19 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <x-nav-link :active="request()->routeIs('home')" href="{{url('/home')}}">Home</x-nav-link>
-        <!-- <x-nav-link :active="request()->routeIs('about')" href="{{url('/about')}}">About</x-nav-link>
-        <x-nav-link :active="request()->routeIs('contact')" href="{{url('/contact')}}">Contact</x-nav-link> -->
         <x-nav-link :active="request()->routeIs('posts.*')" href="{{url('/posts')}}">Posts</x-nav-link>
       </ul>
+
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          @auth
+           <form action="{{route('logout')}}" method="POST">
+            @csrf
+            <button class="btn btn-primary" type="submit">Log out</button>
+           </form>
+          @else
+            <x-nav-link  href="{{url('/login')}}">Log in</x-nav-link>
+          @endauth
+        </ul>
     </div>
   </div>
 </nav>
