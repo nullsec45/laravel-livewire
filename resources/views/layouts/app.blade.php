@@ -10,8 +10,8 @@
     <x-navigation-menu/>
 
    <main class="py-5">
-      <div class="container">
-        {{$slot}}
+      <div class="container-fluid">
+          {{$slot}}
       </div>
    </main>
   </body>
