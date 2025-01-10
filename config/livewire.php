@@ -156,6 +156,6 @@ return [
     |
     */
 
-    'pagination_theme' => 'tailwind',
+    'pagination_theme' => 'bootstrap',
     //   'asset_url' => 'laravel-livewire/public/livewire/livewire.js',
 ];
